@@ -11,7 +11,7 @@ function generateContacts(count = 5) {
   }
 
   fs.writeFileSync(PATH_DB, JSON.stringify(contacts, null, 2));
-  console.log(`${count} contacts generated successfully.`);
+  console.log(`${count} contacts generated`);
 }
 
 generateContacts(5);

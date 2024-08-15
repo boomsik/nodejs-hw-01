@@ -9,5 +9,4 @@ function getAllContacts() {
   return contacts;
 }
 
-// Вызов функции для отображения всех контактов
 getAllContacts();
