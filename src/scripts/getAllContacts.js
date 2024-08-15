@@ -1,5 +1,13 @@
+import fs from 'fs';
 import { PATH_DB } from '../constants/contacts.js';
 
-export const getAllContacts = async () => {};
+function getAllContacts() {
+  const contacts = JSON.parse(fs.readFileSync(PATH_DB, 'utf8'));
 
-console.log(await getAllContacts());
+  console.log(contacts);
+
+  return contacts;
+}
+
+// Вызов функции для отображения всех контактов
+getAllContacts();
